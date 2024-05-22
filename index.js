@@ -9,7 +9,7 @@ import { checkAuth, handleValidationErrors } from './utils/index.js';
 import { PostController, UserController } from './controllers/index.js';
 
 
-mongoose.connect('mongodb+srv://admin:123456789asd@cluster0.wwueicw.mongodb.net/tracknumber')
+mongoose.connect(process.env.MONGODB_URI)
 
 
 const app = express();
